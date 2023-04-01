@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="contacthtml">
+    <article>
+      <h1><a href="index.html" target="self">N.flower</a></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" target="self">Home</a></li>
+          <li><a href="about.html" target="self">About</a></li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+    </article>
+  </header>
+  <main class="contactpage">
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h2>CONTACT US</h2>
+          <aside>
+            <input type="radio" name="store" value="N.flower Vancouver">N.flower Vancouver
+            <input type="radio" name="store" value="N.flower Calgary">N.flower Calgary
+            <input type="radio" name="store" value="N.flower Tronto">N.flower Tronto
+            <input type="radio" name="store" value="N.flower Montreal">N.flower Montreal
+          </aside>
+        <article class="inquirycontents">
+          <label for="inquiry">Contents</label>
+          <select name="inquiry" id="inquiry">
+            <option value="products">Products</option>
+            <option value="lesson">Applying for the lesson</option>
+            <option value="wedding">Wedding</option>
+            <option value="jobvacancy">Job Vacancy</option>
+            <option value="other">Other</option>
+          </select>
+        </article>
+        <article>
+          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="number" id="tel" name="tel" placeholder="Phone number">
+        </article>
+        <textarea name="comment" id="comment" cols="70" rows="10"></textarea>
+        <button>Send</button>
+    </form>
+  </main>
+  <footer>&copy;N.flower</footer>
+</body>
+
+</html>

@@ -1,0 +1,627 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Amiri', 'Noto Serif JP', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ /* ################## */
+ /* mobileversion */
+ /* ################## */
+
+@media (min-width:200px){
+  
+  /* index.html */
+.homepage {
+  background-color: rgb(232, 222, 213);
+  /* background-color: rgb(244, 239, 246); */
+}
+header {
+  width: 100%;
+  height: 100%;
+}
+
+header section {
+  height: 100%;
+  /* width: 100%; */
+}
+
+video {
+  width: 100%;
+  height: 65vh;
+  overflow: hidden; 
+  object-fit: cover;
+}
+
+/* video { position:absolute; left:50%; top:50%;  min-width:100%; min-height:100%; transform:translate(-22%,-22%); } */
+
+/* .homepage > section > figure {
+  background-image: url(../img/headerflower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+} */
+
+header > article {
+  display: flex;
+  background-color: rgb(232, 222, 213);
+  align-items: center;
+  column-gap: 3vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding-left: 2vh;
+  color: slategray;
+}
+
+
+.aboutpage,
+.contacthtml {
+    padding-top: 11vh;
+  }
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  column-gap: 2vh;
+}
+
+nav {
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+}
+
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: slategray;
+  transition: .4s;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.news {
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  row-gap: 3vh;
+}
+
+.news > h2 {
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.news ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  width: 80%; 
+  border: 1px solid black;
+  padding: 2%;
+}
+
+.news li {
+  list-style-type: none;
+}
+
+.news > ul a {
+  font-size: 15px;
+  color: black;
+  transition: .4s;
+}
+
+.news > aside {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.news > aside a {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 1%; 
+  transition: .4s;
+}
+
+.news time {
+  padding: 2%;
+}
+
+.news > section {
+  border: 3px solid gainsboro;
+  width: 80%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+  padding-bottom: 5vh;
+  justify-content: space-between;
+  padding-left: 2vh;
+  padding-right: 2vh;
+}
+
+.gallery figure {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1vh;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 13px;
+}
+
+.gallery img {
+  width: 20vh;
+  height: 25vh;
+}
+
+.gallery > section {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2vh;
+  row-gap: 3vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery > aside {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gallery > aside > a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5%;
+  transition: .4s;
+  border: 2px solid black;
+}
+
+.gallery a:hover {
+  color: lightgray;
+}
+
+footer {
+  background-color: black;
+  padding: 2%;
+  text-align: center;
+  color: lightslategray;
+}
+
+/* about.html */
+
+.about header {
+  padding-left: 20vh;
+  padding-right: 20vh;
+}
+
+header > figure {
+  background-image: url(../img/headerflower.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65vh;
+}
+
+.aboutpage {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  padding-top: 5vh;
+  background-color: rgb(232, 222, 213);
+}
+
+
+.aboutpage > section {
+  /* background-color: rgb(232, 222, 213); */
+  /* background-color: rgb(173, 186, 199); */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  row-gap: 10vh;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+
+.about {
+  display: flex;
+  column-gap: 5vh;
+  justify-content: center;
+}
+
+.aboutpage aside {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
+}
+
+.aboutpage p {
+  line-height: 2;
+  font-size: 15px;
+}
+
+.aboutpage li {
+  list-style-type: none;
+  color: black;
+  line-height: 2;
+  font-size: 13px;
+}
+
+.aboutpage a {
+  color: whitesmoke;
+  transition: .4s;
+  font-size: 18px;
+}
+
+.aboutpage img {
+  width: 30vh;
+  height: 30vh;
+}
+
+.aboutpage h2 {
+  font-size: 30px;
+}
+
+/* price.html */
+
+.pricehtml {
+  /* background-color: gray; */
+  height: 45vh;
+}
+
+h1 > a {
+  text-decoration: none;
+  color: black;
+}
+
+
+caption {
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 2px;
+  padding-bottom: 3vh;
+  color: whitesmoke;
+}
+
+
+/* contact.html */
+
+.homepage section {
+  padding-top: 0;
+}
+
+.contactpage {
+  background-image: url(../img/headerimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20vh;
+  padding-top: 20vh;
+  color: whitesmoke;
+  background-attachment: fixed;
+
+}
+
+.contactpage aside {
+  display: flex;
+}
+
+.contactpage article {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
+} 
+
+
+legend {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+select {
+  padding: 3%;
+}
+
+option {
+  font-size: 15px;
+}
+
+input[type=email],
+input[type=text],
+input[type=number],
+textarea {
+  width: 80%; 
+  padding: 1%;
+}
+
+.contactpage article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vh;
+  padding-top: 8vh;
+  padding-bottom: 3vh;
+}
+
+.inquirycontents {
+  width: 80%;
+  padding-bottom: 9vh;
+  padding-top: 3vh;
+}
+
+button {
+  padding: 2%;
+  width: 10vh;
+  color: black;
+  background-color: ghostwhite;
+  font-size: 15px;
+}
+}
+
+/* #################### */
+/* tabletversion */
+/* #################### */
+
+@media (min-width:600px){
+header article {
+  column-gap: 30vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+}
+
+.homepage,
+.aboutpage,
+.contacthtml {
+    padding-top: 11vh;
+  }
+  
+
+.gallery section {
+  justify-content: center;
+}
+
+.about aside,
+.bouquet aside,
+.wedding aside {
+  width: 80%;
+}
+
+.arrangement,
+.bouquet,
+.wedding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrangement aside {
+  width: 70%;
+}
+
+.contactpage h2 {
+  font-size: 30px;
+}
+
+.contactpage aside {
+  font-size: 23px;
+  display: flex;
+  column-gap: 2vh;
+}
+
+label {
+  font-size: 25px;
+}
+
+
+.contactpage article input {
+  width: 60%;
+  padding: 2%;
+}
+
+textarea {
+  width: 60%;
+}
+}
+
+/* ############## */
+/* desktopversion */
+/* ############## */
+
+@media (min-width:1000px){
+
+
+  header article {
+    column-gap: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 5px;
+  }
+  header ul {
+    column-gap: 5vh;
+  }
+  header li a {
+    font-size: 18px;
+  }
+
+  header h1 {
+    padding-left: 5vh;
+  }
+
+
+  .homepage,
+  .contacthtml {
+    padding-top: 11vh;
+  }
+
+  
+  
+
+  .homepage > section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+  }
+
+  .news ul {
+  width: 30%;
+  }
+
+  .news li a,
+  .news li {
+    font-size: 18px;
+  }
+
+  .news a:hover {
+    color:lightgray;
+   }
+
+   .gallery {
+    align-items: center;
+   }
+   
+  .gallery section {
+    column-gap: 5vh;
+    width: 90%;
+  }
+  .gallery img {
+    width: 35vh;
+    height: 45vh;
+  }
+  
+  .gallery img:hover {
+    opacity: .3;
+    transition: .4s;
+  }
+
+  .gallery aside {
+    width: 90%;
+  }
+
+  .gallery aside a {
+    padding: 1%;
+  }
+
+  .aboutpage > section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    align-items: center;
+  }
+  .about aside {
+    width: 50%;
+  }
+
+  .about h2,
+  .aboutpage h2 {
+    font-size: 50px;
+  }
+
+  .about p,
+  .about li,
+  .aboutpage p {
+    font-size: 20px;
+  }
+
+  .aboutpage img {
+    width: 60vh;
+    height: 60vh;
+  }
+
+  .arrangement,
+  .bouquet,
+  .wedding {
+    row-gap: 8vh;
+    width: 90%;
+  }
+
+  .arrangement aside,
+  .wedding aside{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15vh;
+    align-items: center;
+  }
+
+  .bouquet aside {
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 5vh;
+    align-items: center;
+  }
+
+  .aboutpage a:hover {
+    text-decoration: black;
+  }
+
+  .contactpage h2 {
+    font-size: 35px;
+  }
+
+  .contactpage aside {
+    font-size: 25px;
+    display: flex;
+    column-gap: 2vh;
+  }
+
+  label {
+    font-size: 25px;
+  }
+
+  select {
+    padding: 1%;
+  }
+
+  .contactpage article input {
+    width: 40%;
+  }
+
+  textarea {
+    width: 40%;
+  }
+
+  button {
+    padding: 1%;
+  }
+
+ 
+}
+
+
