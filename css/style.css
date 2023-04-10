@@ -316,17 +316,26 @@ caption {
   padding-top: 0;
 }
 
-.contactpage {
-  background-image: url(../img/headerimg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+.contactbody:before{
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/headerimg.jpg") center no-repeat;
   background-size: cover;
+  background-position: center;
+}
+.contactpage {
+  background-position: center;
   display: flex;
   justify-content: center;
   padding-bottom: 20vh;
   padding-top: 20vh;
   color: whitesmoke;
-  background-attachment: fixed;
 
 }
 
