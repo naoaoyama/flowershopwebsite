@@ -8,6 +8,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.img-item {
+  opacity: 0;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+
  /* ################## */
  /* mobileversion */
  /* ################## */
