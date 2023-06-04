@@ -59,12 +59,13 @@ header > article {
   background-color: rgb(232, 222, 213);
   align-items: center;
   column-gap: 3vh;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   padding: 5px;
   z-index: 1000;
 }
+
 
 header h1 {
   font-size: 30px;
@@ -381,7 +382,7 @@ option {
 
 input[type=email],
 input[type=text],
-input[type=number],
+.number,
 textarea {
   width: 80%; 
   padding: 1%;
@@ -408,6 +409,58 @@ button {
   background-color: ghostwhite;
   font-size: 15px;
 }
+
+.productPage {
+  padding-top: 5vh;
+}
+
+.productPage > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5vh;
+  padding-bottom: 5vh;
+}
+
+.productPage section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 5vh;
+
+}
+
+.qty--wrapper {
+  display: flex;
+}
+
+
+.bigImg {
+  width: 320px;
+  height: 320px;
+}
+
+.product--img {
+  width: 100px;
+  height: 100px;
+}
+
+.qty {
+  width: 30%; 
+  padding: 3%;
+}
+
+.qtyminus,
+.qtyplus {
+  padding: 3%;
+}
+
+.addtocart {
+  width: 80%;
+}
+
+
 }
 
 /* #################### */

@@ -22,28 +22,39 @@
         </ul>
       </nav>
     </article>
-    <figure></figure>
+    <!-- <figure></figure> -->
   </header>
   <main class="productPage">
     <article>
       <div class="img--wrapper">
         <figure>
-          <img src="" alt="">
+          <img class="bigImg" src="/img/flower00.webp" alt="">
         </figure>
-        <div class="img-item">
+        <div class="product--img__wrapper">
           <figure>
-            <img src="" alt="">
-          </figure>
-          <figure>
-            <img src="" alt="">
+            <img class="product--img" src="/img/flower00.webp" alt="">
           </figure>
         </div>
       </div>
       <section>
-        <h2>Pretty Pinks</h2>
-        <p>$98</p>
-        <div class="cart--wrapper">
-          <a href="#">ADD TO CART</a>
+        <div class="product--caption">
+          <h2>Pretty Pinks</h2>
+          <p>$98</p>
+          <p>Enjoy all the pinks we can gather from our local suppliers. Add a card and/or a vase and, VOILA! Bliss. </p>
+        </div>
+
+        <div class="qty--wrapper">
+          <div>
+            <label for="Quantity">quantity</label>
+            <div class="qty--subWrapper">
+              <input type="button" value="-" class="qtyminus" field="quantity">
+              <input id="Quantity" type="number" name="quantity" value="1" class="qty">
+              <input type="button" value="+" class="qtyplus" field="quantity">
+            </div>
+          </div>
+          <button type="submit" class="addtocart" name="add" id="AddToCart" style="visibility: visible;" data-event-queue-button="0">
+            Add to Cart
+          </button>
         </div>
       </section>
     </article>
