@@ -7,7 +7,6 @@ const showFlowers = (e)=>{
   for(let i = 0; i < items.length; i++){
     const keyframes = {
       opacity: [0,1],
-      // translate: ['200px 0', 0],
       rotate: ['5deg', 0],
       scale: [1.1, 1],
     }
