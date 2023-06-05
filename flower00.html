@@ -19,6 +19,7 @@
           <li><a href="index.html" target="self">Home</a></li>
           <li><a href="about.html" target="self">About</a></li>
           <li><a href="contact.html" target="_blank">Contact</a></li>
+          <li><a href=""><img src="./img/shopping-cart.png" alt=""></a></li>
         </ul>
       </nav>
     </article>
@@ -65,15 +66,15 @@
   <footer>&copy;N.flower</footer>
   <script>
     const mainImage = document.querySelector('.mainImg img');
-const productImage = document.querySelectorAll('.productImg img');
+    const productImage = document.querySelectorAll('.productImg img');
 
-for(let i = 0; i < productImage.length; i++){
-  productImage[i].addEventListener('click', (e)=>{
-    mainImage.src = e.target.src;
-    mainImage.animate({opacity:[0, 1]}, 500)
-  });
-}
-console.log(productImage);
+  for(let i = 0; i < productImage.length; i++){
+    productImage[i].addEventListener('click', (e)=>{
+     mainImage.src = e.target.src;
+      mainImage.animate({opacity:[0, 1]}, 500)
+   });
+  }
+  console.log(productImage);
 
   </script>
 </body>
