@@ -27,13 +27,16 @@
   <main class="productPage">
     <article>
       <div class="img--wrapper">
-        <figure>
-          <img class="bigImg" src="./img/flower00.webp" alt="">
+        <figure class="mainImg" >
+          <img src="./img/flower00.webp" alt="">
         </figure>
-        <div class="product--img__wrapper">
-          <figure>
-            <img class="product--img" src="./img/flower01.webp" alt="">
+        <div class="productImg--wrapper">
+          <figure class="productImg">
+            <img src="./img/flower00.webp" alt="">
           </figure>
+          <!-- <figure class="productImg">
+            <img src="./img/flower02.webp" alt="">
+          </figure> -->
         </div>
       </div>
       <section>
@@ -60,7 +63,19 @@
     </article>
   </main>
   <footer>&copy;N.flower</footer>
-  <script src="/js/main.js"></script>
+  <script>
+    const mainImage = document.querySelector('.mainImg img');
+const productImage = document.querySelectorAll('.productImg img');
+
+for(let i = 0; i < productImage.length; i++){
+  productImage[i].addEventListener('click', (e)=>{
+    mainImage.src = e.target.src;
+    mainImage.animate({opacity:[0, 1]}, 500)
+  });
+}
+console.log(productImage);
+
+  </script>
 </body>
 
 </html>

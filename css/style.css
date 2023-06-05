@@ -16,6 +16,7 @@ html {
 }
 
 
+
  /* ################## */
  /* mobileversion */
  /* ################## */
@@ -30,6 +31,7 @@ html {
 header {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 header section {
@@ -68,7 +70,7 @@ header > article {
 
 
 header h1 {
-  font-size: 30px;
+  font-size: 23px;
   font-weight: 200;
   letter-spacing: 2px;
   padding-left: 2vh;
@@ -102,7 +104,7 @@ nav a {
   text-decoration: none;
   color: slategray;
   transition: .4s;
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 2px;
 }
 
@@ -436,12 +438,12 @@ button {
 }
 
 
-.bigImg {
+.mainImg img {
   width: 320px;
   height: 320px;
 }
 
-.product--img {
+.productImg img {
   width: 100px;
   height: 100px;
 }
@@ -458,6 +460,7 @@ button {
 
 .addtocart {
   width: 80%;
+  cursor: pointer;
 }
 
 

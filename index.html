@@ -21,6 +21,7 @@
           <li><a href="index.html" target="self">Home</a></li>
           <li><a href="about.html" target="self">About</a></li>
           <li><a href="contact.html" target="_blank">Contact</a></li>
+          <li><a href=""><img src="./img/shopping-cart (2).png" alt=""></a></li>
         </ul>
       </nav>
     </article>
@@ -136,10 +137,33 @@
     </section>
   </main>
   <footer>&copy;N.flower</footer>
-  <script src="/js/main.js"></script>
-</body>
-<script>
+  <!-- <script src="/js/main.js"></script> -->
+  <script>
+    const items = document.querySelectorAll(".img-item");
+  console.log(items);
   
-</script>
+  
+  
+  const showFlowers = (e)=>{
+    for(let i = 0; i < items.length; i++){
+      const keyframes = {
+        opacity: [0,1],
+        rotate: ['5deg', 0],
+        scale: [1.1, 1],
+      }
+      const options = {
+        duration: 600,
+        delay: i * 300,
+        fill: 'forwards',
+      };
+      items[i].animate(keyframes, options);
+    }
+  };
+  
+  const flowersObserver = new IntersectionObserver(showFlowers);
+  
+  flowersObserver.observe(document.querySelector(".gallery"));
+  </script>
+</body>
 
 </html>
