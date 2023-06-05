@@ -70,10 +70,10 @@ header > article {
 
 
 header h1 {
-  font-size: 23px;
+  font-size: 20px;
   font-weight: 200;
   letter-spacing: 2px;
-  padding-left: 2vh;
+  /* padding-left: 2vh; */
   color: slategray;
 }
 
@@ -86,7 +86,7 @@ header h1 {
 nav > ul {
   display: flex;
   align-items: center;
-  column-gap: 2vh;
+  column-gap: 1.5vh;
 }
 
 nav {
