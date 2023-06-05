@@ -80,7 +80,7 @@ header h1 {
 
 .aboutpage,
 .contacthtml {
-    padding-top: 11vh;
+    /* padding-top: 11vh; */
   }
 
 nav > ul {
