@@ -13,10 +13,10 @@
 <body>
   <header>
     <article>
-      <h1><a href="index.html" target="self">N.flower</a></h1>
+      <h1><a href="home.html" target="self">N.flower</a></h1>
       <nav>
         <ul>
-          <li><a href="index.html" target="_self">Home</a></li>
+          <li><a href="home.html" target="_self">Home</a></li>
           <li><a href="about.html" target="_self">About</a></li>
           <li><a href="contact.html" target="_self">Contact</a></li>
           <li><a href="login.html"><img class="loginIcon" src="./img/login.png" alt=""></a></li>
@@ -68,15 +68,18 @@
   <script>
     const mainImage = document.querySelector('.mainImg img');
     const productImage = document.querySelectorAll('.productImg img');
-
-  for(let i = 0; i < productImage.length; i++){
-    productImage[i].addEventListener('click', (e)=>{
+    for(let i = 0; i < productImage.length; i++){
+      productImage[i].addEventListener('click', (e)=>{
      mainImage.src = e.target.src;
       mainImage.animate({opacity:[0, 1]}, 500)
-   });
-  }
-  console.log(productImage);
+    });
+    }
 
+    const AddToCart = document.querySelector('#AddToCart');
+    AddToCart.addEventListener('click', ()=>{
+      console.log(AddToCart);
+      
+    });
   </script>
 </body>
 

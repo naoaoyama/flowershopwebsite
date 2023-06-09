@@ -412,7 +412,7 @@ textarea {
 
 button {
   padding: 2%;
-  width: 10vh;
+  /* width: 10vh; */
   color: black;
   background-color: ghostwhite;
   font-size: 15px;
@@ -468,6 +468,38 @@ button {
   width: 80%;
   cursor: pointer;
 }
+
+/* register page */
+.registerBody,
+.loginBody {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+.registerPage,
+.loginPage {
+  display: flex;
+  justify-content: center;
+}
+
+.registerPage > form,
+.loginPage > form {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAF8F8;
+  width: 70%;
+  padding: 8%;
+  row-gap: 2vh;
+}
+
+.registerPage label,
+.loginPage label {
+  text-transform: uppercase;
+  color: #A0A5AC;
+}
+
+
 
 
 }
