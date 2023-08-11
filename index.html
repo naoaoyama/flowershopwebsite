@@ -1,170 +1,273 @@
 <!DOCTYPE html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"> -->
+    <title>Flowershop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"> -->
-  <title>Flowershop</title>
-  <link rel="stylesheet" href="./css/style.css">
-  
-</head>
+  <body>
+    <div id="loading">
+      <img class="spinner" src="/img/Eclipse-1.2s-200px.gif" alt="" />
+    </div>
 
-<body>
-  <header>
-    <article>
-      <h1><a href="index.html" target="self">N.flower</a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html" target="_self">Home</a></li>
-          <li><a href="about.html" target="_self">About</a></li>
-          <li><a href="contact.html" target="_self">Contact</a></li>
-          <li><a href="register.html"><img class="loginIcon" src="./img/login.png" alt=""></a></li>
-          <li><a href=""><img class="shopping_cartIcon" src="./img/shopping-cart.png" alt=""></a></li>
-        </ul>
-      </nav>
-    </article>
-      <section>
-        <video src="./video/headervideo.mp4" autoplay loop muted playsinline></video>
-      </section>
-  </header>
-
-  <main class="homepage">
-    <section>
-        <figure></figure>
-      <section class="news">
-        <h2>News&Topics</h2>
-        <ul>
-          <li><time datetime="2022-10-27">Otcober 27</time><a href="#">Sale Information</a></li>
-          <li><time datetime="2022-10-25">Otcober 25</time><a href="#">Arrangement Class</a></li>
-          <li><time datetime="2022-10-20">Otcober 20</time><a href="#">Wedding Featured</a></li>
-        </ul>
-        <aside><a href="#">Read More News</a></aside>
-      </section>
-      <section class="gallery">
+    <div class="body-wrapper">
+      <header>
+        <article>
+          <h1><a href="index.html" target="self">N.flower</a></h1>
+          <nav>
+            <ul>
+              <li><a href="index.html" target="_self">Home</a></li>
+              <li><a href="about.html" target="_self">About</a></li>
+              <li><a href="contact.html" target="_self">Contact</a></li>
+              <li>
+                <a href="register.html">
+                  <img class="loginIcon" src="./img/login.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img
+                    class="shopping_cartIcon"
+                    src="./img/shopping-cart.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </article>
         <section>
-          <figure>
-            <a href="flower00.html" target="self"><img class="img-item" src="./img/flower00.webp" alt="garbera"></a>
-            <figcaption>
-              <h4>A</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower01.webp" alt="hydrange"></a>
-            <figcaption>
-              <h4>B</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower02.webp" alt="whiterose"></a>
-            <figcaption>
-              <h4>C</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower03.webp" alt="tulip"></a>
-            <figcaption>
-              <h4>D</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower04.webp" alt="bouquet-01"></a>
-            <figcaption>
-              <h4>E</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower05.webp" alt="arrangement-02"></a>
-            <figcaption>
-              <h4>F</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flower06.webp" alt="arrangement-02"></a>
-            <figcaption>
-              <h4>G</h4>
-              <p>from $88</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/littlebouquet.webp" alt="bouquet-02"></a>
-            <figcaption>
-              <h4>Little bouquet</h4>
-              <p>from $45</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flowerconfetti.webp" alt="bouquet-03"></a>
-            <figcaption>
-              <h4>Flower confetti</h4>
-              <p>from $30</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/Driedweb.webp" alt="bouquet-04"></a>
-            <figcaption>
-              <h4>Dried flower bundle</h4>
-              <p>from $60</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <a href="#"><img class="img-item" src="./img/flowerkit.webp" alt="arrangement-01"></a>
-            <figcaption>
-              <h4>DIY bouquet kit</h4>
-              <p>from $80</p>
-            </figcaption>
-          </figure>
-          
-          <figure>
-            <a href="#"><img class="img-item" src="./img/EndlessSummerGiftBoxWEBYA_6df40e9d-560c-410e-9d3c-7aad6eb9b89c.webp" alt="arrangement-03"></a>
-            <figcaption>
-              <h4>Customize</h4>
-              <p>from $160</p>
-            </figcaption>
-          </figure>
+          <video
+            src="./video/headervideo.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+          ></video>
         </section>
-        <aside>
-          <a href="#">We have more...</a>
-        </aside>
-      </section>
-    </section>
-  </main>
-  <footer>&copy;N.flower</footer>
-  <!-- <script src="/js/main.js"></script> -->
-  <script>
-    const items = document.querySelectorAll(".img-item");
-  console.log(items);
-  
-  
-  
-  const showFlowers = (e)=>{
-    for(let i = 0; i < items.length; i++){
-      const keyframes = {
-        opacity: [0,1],
-        rotate: ['5deg', 0],
-        scale: [1.1, 1],
-      }
-      const options = {
-        duration: 600,
-        delay: i * 300,
-        fill: 'forwards',
-      };
-      items[i].animate(keyframes, options);
-    }
-  };
-  
-  const flowersObserver = new IntersectionObserver(showFlowers);
-  
-  flowersObserver.observe(document.querySelector(".gallery"));
-  </script>
-</body>
+      </header>
+      <main class="homepage">
+        <section>
+          <figure></figure>
+          <section class="news">
+            <h2>News&Topics</h2>
+            <ul>
+              <li>
+                <time datetime="2022-10-27">Otcober 27</time>
+                <a href="#">Sale Information</a>
+              </li>
+              <li>
+                <time datetime="2022-10-25">Otcober 25</time>
+                <a href="#">Arrangement Class</a>
+              </li>
+              <li>
+                <time datetime="2022-10-20">Otcober 20</time>
+                <a href="#">Wedding Featured</a>
+              </li>
+            </ul>
+            <aside><a href="#">Read More News</a></aside>
+          </section>
+          <section class="gallery">
+            <section>
+              <figure>
+                <a href="flower00.html" target="self">
+                  <img
+                    class="img-item"
+                    src="./img/flower00.webp"
+                    alt="garbera"
+                  />
+                </a>
+                <figcaption>
+                  <h4>A</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flower01.webp"
+                    alt="hydrange"
+                  />
+                </a>
+                <figcaption>
+                  <h4>B</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flower02.webp"
+                    alt="whiterose"
+                  />
+                </a>
+                <figcaption>
+                  <h4>C</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img class="img-item" src="./img/flower03.webp" alt="tulip" />
+                </a>
+                <figcaption>
+                  <h4>D</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flower04.webp"
+                    alt="bouquet-01"
+                  />
+                </a>
+                <figcaption>
+                  <h4>E</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flower05.webp"
+                    alt="arrangement-02"
+                  />
+                </a>
+                <figcaption>
+                  <h4>F</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flower06.webp"
+                    alt="arrangement-02"
+                  />
+                </a>
+                <figcaption>
+                  <h4>G</h4>
+                  <p>from $88</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/littlebouquet.webp"
+                    alt="bouquet-02"
+                  />
+                </a>
+                <figcaption>
+                  <h4>Little bouquet</h4>
+                  <p>from $45</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flowerconfetti.webp"
+                    alt="bouquet-03"
+                  />
+                </a>
+                <figcaption>
+                  <h4>Flower confetti</h4>
+                  <p>from $30</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/Driedweb.webp"
+                    alt="bouquet-04"
+                  />
+                </a>
+                <figcaption>
+                  <h4>Dried flower bundle</h4>
+                  <p>from $60</p>
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/flowerkit.webp"
+                    alt="arrangement-01"
+                  />
+                </a>
+                <figcaption>
+                  <h4>DIY bouquet kit</h4>
+                  <p>from $80</p>
+                </figcaption>
+              </figure>
 
+              <figure>
+                <a href="#">
+                  <img
+                    class="img-item"
+                    src="./img/EndlessSummerGiftBoxWEBYA_6df40e9d-560c-410e-9d3c-7aad6eb9b89c.webp"
+                    alt="arrangement-03"
+                  />
+                </a>
+                <figcaption>
+                  <h4>Customize</h4>
+                  <p>from $160</p>
+                </figcaption>
+              </figure>
+            </section>
+            <aside>
+              <a href="#">We have more...</a>
+            </aside>
+          </section>
+        </section>
+      </main>
+      <footer>&copy;N.flower</footer>
+    </div>
+    <!-- <script src="/js/main.js"></script> -->
+    <script>
+      const loading = document.querySelector('#loading')
+      window.addEventListener('load', () => {
+        loading.classList.add('loaded')
+      })
+
+      const items = document.querySelectorAll('.img-item')
+      console.log(items)
+
+      const showFlowers = (e) => {
+        for (let i = 0; i < items.length; i++) {
+          const keyframes = {
+            opacity: [0, 1],
+            rotate: ['5deg', 0],
+            scale: [1.1, 1],
+          }
+          const options = {
+            duration: 600,
+            delay: i * 300,
+            fill: 'forwards',
+          }
+          items[i].animate(keyframes, options)
+        }
+      }
+
+      const flowersObserver = new IntersectionObserver(showFlowers)
+
+      flowersObserver.observe(document.querySelector('.gallery'))
+    </script>
+  </body>
 </html>
