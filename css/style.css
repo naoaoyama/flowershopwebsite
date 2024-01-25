@@ -321,6 +321,7 @@ header > figure {
 .aboutpage img {
   width: 30vh;
   height: 30vh;
+  object-fit: cover;
 }
 
 .aboutpage h2 {
